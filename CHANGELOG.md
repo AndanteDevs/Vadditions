@@ -1,7 +1,7 @@
 CHANGELOG
 =========
 
-#v 1.1.0.0-pre5 (build 34)
+# v1.1.0.0-pre5 (build 34)
 ## Changes (1)
 - Removed mythical clerics as they were filled with bugs
 ## Bug Fixes (1)
