@@ -1,6 +1,12 @@
 CHANGELOG
 =========
 
+#v 1.1.0.0-pre5 (build 34)
+## Changes (1)
+- Removed mythical clerics as they were filled with bugs
+## Bug Fixes (1)
+- Custom crafter item drops' tags were incorrect, so much that it corrupted the advanced crafter drop's loot table
+
 # v1.1.0.0-pre4 (build 33)
 ## Bug Fixes (1)
 - Anything utilising player random checks now works again

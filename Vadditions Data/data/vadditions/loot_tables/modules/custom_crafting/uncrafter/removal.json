@@ -13,7 +13,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.minecraft.crafting_table.completely_fixed\\\"}\"},vadditions:{vadditions:{custom_crafting:{slightly_damaged:1b}}}}"
+                            "tag": "{display:{Name:\"{\\\"translate\\\":\\\"item.minecraft.crafting_table.completely_fixed\\\"}\"},vadditions:{custom_crafting:{slightly_damaged:1b}}}"
                         }
                     ]
                 }

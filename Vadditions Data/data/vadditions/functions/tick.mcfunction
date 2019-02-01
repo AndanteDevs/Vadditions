@@ -156,7 +156,7 @@ scoreboard players reset * VADS_Random
         #run randoms
 execute as @e[type=#vadditions:random] run function vadditions:random
 execute as @e[tag=VADS_Random] run function vadditions:random
-execute as @e[type=minecraft:villager,tag=!VADS_VillageProcessed] run function vadditions:random
+execute as @e[type=minecraft:villager,tag=!VADS_VillagerProcessed] run function vadditions:random
 execute as @e[tag=VADS_OreEntity,scores={VADS_Age=1}] run function vadditions:random
     #overall random
 scoreboard players set Overall VADS_Random2 100

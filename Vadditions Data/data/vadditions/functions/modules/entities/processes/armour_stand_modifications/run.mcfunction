@@ -1,6 +1,8 @@
 #@s - @e[type=minecraft:armor_stand,tag=!VADS_Entity]
 #called by vadditions:modules/entities/clock
 
+#show stands
+execute if entity @e[type=minecraft:item,nbt={Item:{tag:{pages:["show stands"]}},OnGround:1b},distance=..5] run effect give @s minecraft:glowing 1 0 true
 #particles
 execute if entity @e[type=minecraft:item,nbt={Item:{tag:{pages:["no particle"]}},OnGround:1b},distance=...5] run function vadditions:modules/entities/processes/armour_stand_modifications/particles/remove
 execute if entity @e[type=minecraft:item,nbt={Item:{tag:{pages:["flame"]}},OnGround:1b},distance=...5] run function vadditions:modules/entities/processes/armour_stand_modifications/particles/add_flame

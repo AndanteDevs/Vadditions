@@ -116,16 +116,10 @@ execute as @e[type=minecraft:tnt] if score @s VADS_Fuse matches 6..20 run data m
 execute as @e[type=minecraft:tnt] if score @s VADS_Fuse matches ..5 run data merge entity @s {CustomName:"{\"color\":\"red\",\"text\":\"Boom!\"}",CustomNameVisible:1}
 
         # Creepers
-execute as @e[type=minecraft:creeper,scores={VADS_CreeperTime=1..10}] run data merge entity @s {CustomName:"{\"color\":\"yellow\",\"text\":\"2\"}",CustomNameVisible:1}
+execute as @e[type=minecraft:creeper,scores={VADS_CreeperTime=1..10}] run data merge entity @s {CustomName:"{\"color\":\"green\",\"text\":\"2\"}",CustomNameVisible:1}
 execute as @e[type=minecraft:creeper,scores={VADS_CreeperTime=11..20}] run data merge entity @s {CustomName:"{\"color\":\"yellow\",\"text\":\"1\"}",CustomNameVisible:1}
-execute as @e[type=minecraft:creeper,scores={VADS_CreeperTime=21..30}] run data merge entity @s {CustomName:"{\"color\":\"yellow\",\"text\":\"Boom!\"}",CustomNameVisible:1}
+execute as @e[type=minecraft:creeper,scores={VADS_CreeperTime=21..30}] run data merge entity @s {CustomName:"{\"color\":\"red\",\"text\":\"Boom!\"}",CustomNameVisible:1}
 
     # Turtle {HasEgg:1b} has Pregnant Name
 execute as @e[type=minecraft:turtle,nbt={HasEgg:1b},nbt=!{CustomName:"{\"text\":\"Expecting...\"}"}] run data merge entity @s {CustomNameVisible:1,CustomName:"{\"text\":\"Expecting...\"}"}
 execute as @e[type=minecraft:turtle,nbt={HasEgg:0b,CustomName:"{\"text\":\"Expecting...\"}"}] run data merge entity @s {CustomNameVisible:0,CustomName:""}
-
-    #mythical clerics
-execute as @e[type=minecraft:villager,tag=!VADS_ForceSpawn,tag=!VADS_VillageProcessed,tag=!VADS_MythicalCleric] if score Hardmode VADS_Overall matches 0 run function vadditions:modules/entities/processes/mythical_cleric/easymode
-execute as @e[type=minecraft:villager,tag=!VADS_ForceSpawn,tag=!VADS_VillageProcessed,tag=!VADS_MythicalCleric] if score Hardmode VADS_Overall matches 1 run function vadditions:modules/entities/processes/mythical_cleric/hardmode
-execute as @e[type=minecraft:villager,tag=VADS_ForceSpawn,tag=!VADS_ForceSpawnProcessed,tag=VADS_MythicalCleric] if score Hardmode VADS_Overall matches 0 run function vadditions:modules/entities/processes/mythical_cleric/force_spawn/easymode
-execute as @e[type=minecraft:villager,tag=VADS_ForceSpawn,tag=!VADS_ForceSpawnProcessed,tag=VADS_MythicalCleric] if score Hardmode VADS_Overall matches 1 run function vadditions:modules/entities/processes/mythical_cleric/force_spawn/hardmode
